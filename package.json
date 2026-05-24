@@ -1,6 +1,6 @@
 {
   "name": "@meshcaster/expo-supabase-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Config-driven Supabase auth with social login (Google, Facebook, Apple) for Expo apps",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
