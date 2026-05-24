@@ -1,0 +1,10 @@
+name: Publish
+on:
+  push:
+    tags: ["v*"]
+
+jobs:
+  publish:
+    uses: Meshcaster/.github/.github/workflows/npm-publish.yml@main
+    secrets:
+      npm-token: ${{ secrets.NPM_TOKEN }}

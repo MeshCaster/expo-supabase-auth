@@ -1,0 +1,71 @@
+{
+  "name": "@meshcaster/expo-supabase-auth",
+  "version": "1.0.0",
+  "description": "Config-driven Supabase auth with social login (Google, Facebook, Apple) for Expo apps",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc --outDir dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "expo",
+    "supabase",
+    "auth",
+    "google-signin",
+    "facebook-login",
+    "apple-signin",
+    "react-native"
+  ],
+  "author": "nugi1",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Meshcaster/expo-supabase-auth.git"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0"
+  },
+  "peerDependencies": {
+    "@react-native-google-signin/google-signin": "^16.x",
+    "expo-apple-authentication": "~7.x",
+    "expo-crypto": "~14.x",
+    "expo-linking": "~7.x",
+    "react": "^18.0.0",
+    "react-native": ">=0.76.0",
+    "react-native-fbsdk-next": "^13.x",
+    "react-native-mmkv": "^3.x"
+  },
+  "peerDependenciesMeta": {
+    "expo-apple-authentication": {
+      "optional": true
+    },
+    "expo-crypto": {
+      "optional": true
+    },
+    "@react-native-google-signin/google-signin": {
+      "optional": true
+    },
+    "react-native-fbsdk-next": {
+      "optional": true
+    },
+    "react-native-mmkv": {
+      "optional": true
+    },
+    "expo-linking": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.15",
+    "@types/react-native": "^0.72.8",
+    "typescript": "^6.0.3"
+  }
+}
